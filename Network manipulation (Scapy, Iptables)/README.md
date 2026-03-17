@@ -1,4 +1,4 @@
-ALL PERFORMED ON PRIVATE NETWORK, NOT PUBLIC USE
+ALL PERFORMED ON PRIVATE NETWORK/DEVICE, NOT PUBLIC USE
 
 
 
@@ -25,11 +25,13 @@ Wireshark for network traffic monitoring and measurement
 
 Iptables for packet filtering and firewall rule management
 
+VirtualBox for virtualisation of machines and network and sandboxing
 
 
 
 
-Unfortunately I longer have access to the specific questions for these answers. And yes, having code copy pasted into a pdf feels like a sin but this the format I had to use.
+
+Unfortunately I longer have access to the specific questions for these answers. And yes, having code copy pasted into a pdf feels like a crime but this the format I had to use.
 
 
 
