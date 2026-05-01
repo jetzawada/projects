@@ -1,3 +1,5 @@
+README but also personal notes
+
 Work in progress.
 
 Became curious about how different news sites would portray the same events differently.
@@ -24,5 +26,9 @@ make it all relat(ional)able
 		outlet(articles, topics, topicspecific sentitemnt)
 	 	etc
 	doing this first may make everything else simpler?
+	
+keyword matching alone will undoubtedly lead to mistakes
+	do sorting manually ie tag articles with topics
+	get some gaddah prompt engineering to do the tagging, ie ingest article and determine its topic. Ollama back?
 
 
