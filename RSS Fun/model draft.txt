@@ -1,0 +1,50 @@
+ideas for modelling
+
+Tables:
+	Outlet{PK Outlet_ID, N,
+		Table models a news outlet website, has ID, Name
+			could add country/locale?
+	Article{PK ArticleID, FK Outlet_ID, Title, Content, ArticleSentiment, ArticleMetadata}
+		Table for modelling individual articles, FKs 
+	
+	ArticleSentiment{TitleSentiment, ContentSentiment, OverallComparison}
+		
+	ArticleMetadata{ArticleID, DateWritten, DateScraped}
+	
+	ArticleTopic{ArticleID, TopicID}
+	
+	Topic/Keyword?{TopicID, TopicName, Desc}
+		
+		
+		
+
+
+
+Thoughts:
+	perform analysis prior to insertion to db, if we do this we dont necessarily need to include article content?
+		save on space as content of a large number of artilces would be costly
+	how to model topic/keywords efficiently?
+	how to distill article to pure content+framing ie ignore irreliveant filler
+	gpt to go from tables to DDL?
+	next step from VADER,
+	will take serious vol of data to generate genuine insight
+	
+	
+Process
+	RSS Feed (feedparser)-> 
+	
+	csv with article contents (clean and select relevant data(title,content,date etc))->
+	
+	sentiment analysis and upload to db (for POC we can just use NLTK VADER, (futher versions could be 
+	automating a prompt to analyse and ignore redundant content) and then pipe to insert into db)->
+	
+	With articles in db, i can then begin looking at coverages/sentiments towards different
+	events/topics between outlets or within an outlet overtime
+		could find
+			biases
+			changes in opinions
+			factual innacuracies in coverages/sentiments	
+			calculate outlet wide truthfulness and sentiment scores
+	
+
+
